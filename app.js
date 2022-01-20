@@ -1,16 +1,9 @@
-//import fetch from 'node-fetch';
+//Simulating rxjs, a fix for: https://dev.to/creeland/intro-to-rxjs-concepts-with-vanilla-javascript-4aji?utm_campaign=an-intro-to-rxjs-concepts-with-vanilla-j
 import process from 'process';
 
 var stdin = process.openStdin();
 stdin.resume();
-/* const observable = {
-    subscribe: observer => {
 
-    },
-    pipe: operator => {
-
-    },
-} */
 const observer = {
     next: x => {
         console.log(x)
